@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hi, my name is Arief. I'm UI/UX Designer with 2 year experience" />
     <title>Muhammad Arief Nugraha - UI/UX Designer</title>
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&f[]=clash-display@400,700,600&display=swap"
-        rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&f[]=clash-display@400,700,600&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
@@ -27,16 +26,16 @@
             margin: 0;
         }
 
-        .fs-80 {
-            font-size: 80px;
-        }
-
         .fw-semibold {
             font-weight: 600;
         }
 
         .fw-bold {
             font-weight: 700;
+        }
+
+        .fw-black {
+            font-weight: 900;
         }
 
         .text-center {
@@ -54,6 +53,12 @@
         .text-clash-display {
             font-family: "Clash Display", sans-serif;
         }
+
+        .fs-80 {font-size: 80px;}
+
+        .fs-60 {font-size: 60px;}
+
+        .fs-28 {font-size: 28px;}
 
         .fs-20 {
             font-size: 20px;
@@ -93,6 +98,11 @@
             margin-top: 16px;
         }
 
+        .px-80 {
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+
         .radius-80 {
             border-radius: 80px;
         }
@@ -101,6 +111,7 @@
 
         .d-block {display: block;}
 
+        .lh-120 {line-height: 120%;}
         #welcome {
             padding: 40px 40px 0 40px;
         }
@@ -112,6 +123,43 @@
         #welcome .description .social {
             width: calc(100% - 884px);
         }
+
+        .mywork {
+            width: 100%;
+            height: 470px;
+            background: url('./assets/img/mywork.webp') no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            margin-top: 40px;
+        }
+
+        #service {margin-top: 40px;}
+
+        #service .item {
+            padding-bottom: 40px;
+            border-bottom: dotted 2px #C1C1C1;
+        }
+
+        #service .title span {
+            display: flex;
+            width: 120px;
+            height: 90px;
+            background: #113263;
+            color: #fff;
+            border-radius: 80px;
+            font-size: 60px;
+            font-weight: 700;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #service .skills span {
+            padding: 8px 20px;
+            border-radius: 80px;
+            border: dotted 2px #113263;
+        }
+        
+
     </style>
 </head>
 
@@ -334,33 +382,36 @@
     <!-- END WELCOME -->
 
     <!-- START MY WORK -->
-    <!-- <section class="mywork"></section> -->
+    <section class="mywork"></section>
     <!-- END MY WORK -->
 
     <!-- START SERVICE-->
-    <!-- <section id="service" class="service">
-        <h2>Services</h2>
+    <section id="service" class="service px-80">
+        <h2 class="fs-60">Services</h2>
 
-        <div>
-            <h3>UI/UX Design</h3>
-            <p>Start from research to understand what user need until, to create beautiful design &
-                good user experience</p>
+        <div class="item mt-20">
+            <div class="title d-flex align-items-center col-gap-16">
+                <span>01</span>
+                <h3 class="fs-60 fw-black text-blue-primary">UI/UX Design</h3>
+            </div>
+            <p class="fs-28 lh-120 mt-16">Start from research to understand what user need until, to create beautiful design & good user experience</p>
 
-            <div class="skills">
+            <div class="skills d-flex flex-wrap col-gap-20 mt-16 fw-bold">
                 <span>Figma</span>
                 <span>User Research</span>
                 <span>Adobe XD</span>
             </div>
         </div>
 
+        <div class="item mt-20">
+            <div class="title d-flex align-items-center col-gap-16">
+                <span>02</span>
+                <h3 class="fs-60 fw-black text-blue-primary">Web Design</h3>
+            </div>
+            <p class="fs-28 lh-120 mt-16">Designing and slicing responsive web design using code</p>
 
-        <div>
-            <h3>Web Design</h3>
-            <p>Design responsive website for mobile, tablet, and desktop. Convert the design into code</p>
-
-            <div class="skills">
+            <div class="skills d-flex flex-wrap col-gap-20 mt-16 fw-bold">
                 <span>Figma</span>
-                <span>Adobe XD</span>
                 <span>HTML</span>
                 <span>Javascript</span>
                 <span>CSS</span>
@@ -368,7 +419,7 @@
                 <span>Tailwind CSS</span>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- START PROJECTS -->
     <!-- <section id="project" class="project">
