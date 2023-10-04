@@ -84,11 +84,15 @@
             column-gap: 16px;
         }
 
+        .row-gap-16 {row-gap: 16px;}
+
         .align-items-center {
             align-items: center;
         }
 
         .justify-content-center {justify-content: center;}
+
+        .mt-40 {margin-top: 40px;}
 
         .mt-20 {
             margin-top: 20px;
@@ -112,6 +116,7 @@
         .d-block {display: block;}
 
         .lh-120 {line-height: 120%;}
+
         #welcome {
             padding: 40px 40px 0 40px;
         }
@@ -159,6 +164,32 @@
             border: dotted 2px #113263;
         }
         
+        #project .list .item {
+            width: calc(25% - 15px);
+        }
+
+        #project .list .item h3 {
+            margin-top: 8px;
+            line-height: 140%;
+        }
+        #project .list .item a {
+            color: #121212;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        #project .list .item .date {
+            color: #818181;
+            font-size: 20px;
+            margin-top: 8px;
+        }
+
+        #project .list .item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
 
     </style>
 </head>
@@ -245,7 +276,7 @@
     <!-- END NAVBAR -->
 
     <!-- START WELCOME -->
-    <section class="welcome" id="welcome">
+    <section id="welcome">
 
         <h1 class="fs-80 fw-semibold text-center text-clash-display">
             Hi <span class="text-blue-primary">Good People</span> !
@@ -386,7 +417,7 @@
     <!-- END MY WORK -->
 
     <!-- START SERVICE-->
-    <section id="service" class="service px-80">
+    <section id="service" class="px-80">
         <h2 class="fs-60">Services</h2>
 
         <div class="item mt-20">
@@ -422,60 +453,51 @@
     </section>
 
     <!-- START PROJECTS -->
-    <!-- <section id="project" class="project">
-        <div id="prambors" class="item">
-            <span>2020</span>
-            <h2>Prambors App</h2>
-            <p class="description">Prambors is one of biggest radio station in Indonesia. One day, they want to revamp
-                their app with new feature such as streaming radio, listening podcast, watching video, and read news.
-                Here’s the result</p>
+    <section id="project" class="mt-40 px-80">
+        <h2 class="fs-60 fw-semibold text-clash-display">Projects</h2>
 
-            <div class="info">
-                <div class="fonts">
-                    <span>Fonts</span>
-                    <p>Mukta</p>
-                </div>
+        <div class="list d-flex flex-wrap col-gap-20 row-gap-16 mt-20">
+            <div class="item">
+                <a href="https://www.behance.net/gallery/180323399/Boba-Point-Of-Sales-Dashboard" target="_blank">
+                    <img src="./assets/img/boba-dashboard.webp" alt="Boba: Point of Shop Dashboard" width="305" height="260">
+                </a>
 
-                <div class="color">
-                    <span>Colors</span>
-                    <div class="list">
-                        <div class="item" style="background-color: #FDF001;"></div>
-                        <div class="item" style="background-color: #1B1B1B;"></div>
-                        <div class="item" style="background-color: #FFF;"></div>
-                    </div>
-                </div>
+                <h3><a href="https://www.behance.net/gallery/180323399/Boba-Point-Of-Sales-Dashboard" target="_blank">Boba: Point of Shop Dashboard</a></h3>
+
+                <p class="date mt-8">2023</p>
             </div>
 
-            <img src="./assets/img/prambors.webp" alt="Prambors App" width="100%" height="auto">
-        </div>
+            <div class="item">
+                <a href="https://www.behance.net/gallery/180323399/Boba-Point-Of-Sales-Dashboard" target="_blank">
+                    <img src="./assets/img/aviat-doctor.webp" alt="Aviat: An App To Make Appointment For Doctor and Patient" width="305" height="260">
+                </a>
 
-        <div id="otten-coffee" class="item">
-            <span>2020</span>
-            <h2>Trade in Feature In Otten Coffee App</h2>
-            <p class="description">Create a Interface for the Coffee Machine Trade-in Feature at
-                Otten Coffee</p>
+                <h3><a href="https://www.behance.net/gallery/180323399/Boba-Point-Of-Sales-Dashboard" target="_blank">Aviat: An App To Make Appointment For Doctor and Patient</a></h3>
 
-            <div class="info">
-                <div class="fonts">
-                    <span>Fonts</span>
-                    <p>Mukta</p>
-                </div>
-
-                <div class="color">
-                    <span>Colors</span>
-                    <div class="list">
-                        <div class="item" style="background-color: #FDF001;"></div>
-                        <div class="item" style="background-color: #1B1B1B;"></div>
-                        <div class="item" style="background-color: #FFF;"></div>
-                    </div>
-                </div>
+                <p class="date mt-8">2023</p>
             </div>
 
+            <div class="item">
+                <a href="https://www.behance.net/gallery/176204949/Case-Study-Wasabee-An-App-To-Order-In-Restaurant" target="_blank">
+                    <img src="./assets/img/wasabee.webp" alt="Wasabee: An App To Help Customer Order Food At Restaurant" width="305" height="260">
+                </a>
 
-            <img src="./assets/img/otten-desktop.webp" alt="Otten Coffee" width="100%" height="auto">
-            <img src="./assets/img/otten-mobile.webp" alt="Otten Coffe" width="100%" height="auto">
+                <h3><a href="https://www.behance.net/gallery/176204949/Case-Study-Wasabee-An-App-To-Order-In-Restaurant" target="_blank">Wasabee: An App To Help Customer Order Food At Restaurant</a></h3>
+
+                <p class="date mt-8">2023</p>
+            </div>
+
+            <div class="item">
+                <a href="https://live.kash.my/" target="_blank">
+                    <img src="./assets/img/kash.webp" alt="Redesigning KA$H Website" width="305" height="260">
+                </a>
+
+                <h3><a href="https://live.kash.my/" target="_blank">Redesigning KA$H Website</a></h3>
+
+                <p class="date mt-8">2023</p>
+            </div>
         </div>
-    </section> -->
+    </section>
     <!-- END PROJECTS -->
 
     <!-- START CONNECT -->
