@@ -7,15 +7,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hi, my name is Arief. I'm UI/UX Designer with 2 year experience" />
     <title>Muhammad Arief Nugraha - UI/UX Designer</title>
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&f[]=clash-display@400,700,600&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&f[]=clash-display@400,700,600&display=swap"
+        rel="stylesheet">
     <style>
-       
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Satoshi", sans-serif;
+            color: #121212;
+        }
+
+        h1,
+        h2,
+        h3,
+        p {
+            margin: 0;
+        }
+
+        .fs-80 {
+            font-size: 80px;
+        }
+
+        .fw-semibold {
+            font-weight: 600;
+        }
+
+        .fw-bold {
+            font-weight: 700;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-blue-primary {
+            color: #113263;
+        }
+
+        .text-white {
+            color: #fff;
+        }
+
+        .text-clash-display {
+            font-family: "Clash Display", sans-serif;
+        }
+
+        .fs-20 {
+            font-size: 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .col-gap-20 {
+            column-gap: 20px;
+        }
+
+        .col-gap-16 {
+            column-gap: 16px;
+        }
+
+        .align-items-center {
+            align-items: center;
+        }
+
+        .justify-content-center {justify-content: center;}
+
+        .mt-20 {
+            margin-top: 20px;
+        }
+
+        .mt-16 {
+            margin-top: 16px;
+        }
+
+        .radius-80 {
+            border-radius: 80px;
+        }
+
+        .obj-cover {object-fit: cover;}
+
+        .d-block {display: block;}
+
+        #welcome {
+            padding: 40px 40px 0 40px;
+        }
+
+        #welcome .description .text {
+            width: 864px;
+        }
+
+        #welcome .description .social {
+            width: calc(100% - 884px);
+        }
     </style>
 </head>
 
 <body>
     <!-- START NAVBAR -->
-    <nav>
+    <!-- <nav>
         <ul>
             <li>
                 <a href="#welcome">
@@ -91,26 +193,142 @@
                 </a>
             </li>
         </ul>
-    </nav>
+    </nav> -->
     <!-- END NAVBAR -->
 
     <!-- START WELCOME -->
     <section class="welcome" id="welcome">
-        
-        <h1>
-            Hi <span>Good People</span> !
-            <br />
-            <img src=""> I'm Arief <img src="">
-            <br />
-            <span>UI/UX Designer</span>
+
+        <h1 class="fs-80 fw-semibold text-center text-clash-display">
+            Hi <span class="text-blue-primary">Good People</span> !
+           
+
+            <div class="d-flex col-gap-20 align-items-center justify-content-center mt-20">
+                <img src="./assets/img/welcome-llustration-1.webp" alt="Illustration 1" width="228" height="88"
+                    class="radius-80 obj-cover"> I'm <span class="text-blue-primary">Arief</span> <img src="./assets/img/welcome-illustration-2.webp"
+                    alt="Illustration 2" width="228" height="88" class="radius-80 obj-cover">
+            </div>
+
+            <span class="d-block mt-20 text-blue-primary">UI/UX Designer</span>
         </h1>
 
-        <div class="description">
-            <p>I am UI/UX designer live in Jakarta, Indonesia. I Believe That Good Design and Experience Can Help People
-                to Solve the Problems They Face With The Products We Make.</p>
+        <div class="description d-flex col-gap-20 fs-20 mt-20">
+            <div class="text">
+                <p>
+                    Hello, I am Arief, UI/UX designer with 3 years of experience from Jakarta, Indonesia.
 
-            <p>Love to learn about inclusive design, because it’s always nice that I can help people from many
-                backgrounds to solve their problem easily</p>
+                    <br />
+                    <br />
+
+                    As a UI/UX Designer, I believe listening and being empathetic with people who have problems is the
+                    first important step to making better solutions for the problem.
+
+                    <br />
+                    <br />
+
+                    So tell your story to me and let me become your partner to solve your problem
+                </p>
+            </div>
+
+            <div class="social">
+                <a href="mailto:muhammadariefnugraha77@gmail.com"
+                    class="d-flex align-items-center col-gap-16 text-blue-primary">
+                    <div class="d-flex align-items-center">
+                        <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.75 4C0.75 3.40326 0.987053 2.83097 1.40901 2.40901C1.83097 1.98705 2.40326 1.75 3 1.75H21C21.5967 1.75 22.169 1.98705 22.591 2.40901C23.0129 2.83097 23.25 3.40326 23.25 4V5.812L12 12.139L0.75 5.812V4Z"
+                                fill="#113263" />
+                            <path
+                                d="M0.75 7.53251V19C0.75 19.5967 0.987053 20.169 1.40901 20.591C1.83097 21.013 2.40326 21.25 3 21.25H21C21.5967 21.25 22.169 21.013 22.591 20.591C23.0129 20.169 23.25 19.5967 23.25 19V7.53251L12 13.861L0.75 7.53101V7.53251Z"
+                                fill="#113263" />
+                        </svg>
+                    </div>
+
+                    muhammadariefnugraha77@gmail.com
+                </a>
+
+                <a href="https://www.linkedin.com/in/muhammad-arief-nugraha"
+                    class="d-flex align-items-center col-gap-16 mt-16 text-blue-primary" target="_blank">
+                    <div class="d-flex align-items-center">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19 3.5C19.5304 3.5 20.0391 3.71071 20.4142 4.08579C20.7893 4.46086 21 4.96957 21 5.5V19.5C21 20.0304 20.7893 20.5391 20.4142 20.9142C20.0391 21.2893 19.5304 21.5 19 21.5H5C4.46957 21.5 3.96086 21.2893 3.58579 20.9142C3.21071 20.5391 3 20.0304 3 19.5V5.5C3 4.96957 3.21071 4.46086 3.58579 4.08579C3.96086 3.71071 4.46957 3.5 5 3.5H19ZM18.5 19V13.7C18.5 12.8354 18.1565 12.0062 17.5452 11.3948C16.9338 10.7835 16.1046 10.44 15.24 10.44C14.39 10.44 13.4 10.96 12.92 11.74V10.63H10.13V19H12.92V14.07C12.92 13.3 13.54 12.67 14.31 12.67C14.6813 12.67 15.0374 12.8175 15.2999 13.0801C15.5625 13.3426 15.71 13.6987 15.71 14.07V19H18.5ZM6.88 9.06C7.32556 9.06 7.75288 8.883 8.06794 8.56794C8.383 8.25288 8.56 7.82556 8.56 7.38C8.56 6.45 7.81 5.69 6.88 5.69C6.43178 5.69 6.00193 5.86805 5.68499 6.18499C5.36805 6.50193 5.19 6.93178 5.19 7.38C5.19 8.31 5.95 9.06 6.88 9.06M8.27 19V10.63H5.5V19H8.27V19Z"
+                                fill="#113263" />
+                        </svg>
+
+                    </div>
+
+                    Muhammad Arief Nugraha
+                </a>
+
+                <a href="https://dribbble.com/arief_nugraha"
+                    class="d-flex align-items-center col-gap-16 mt-16 text-blue-primary" target="_blank">
+                    <div class="d-flex align-items-center">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1055_424)">
+                                <path
+                                    d="M6.4704 1.84717C4.805 2.7126 3.36555 3.95622 2.26746 5.47831C1.16938 7.0004 0.443216 8.75861 0.1472 10.612H0.8432C5.3312 10.508 8.8496 10.1192 11.7232 9.23917C10.4752 7.02637 8.952 4.85517 7.1248 2.64717L7.1232 2.64557L6.4704 1.84717ZM0.0032 12.212L0 12.5C0 15.7272 1.2736 18.6568 3.3456 20.8136L3.6032 20.2952C3.61751 20.2665 3.63354 20.2387 3.6512 20.212C6.304 16.1768 9.3056 13.7768 12.6624 12.7C12.8896 12.6264 13.12 12.5592 13.3504 12.4984C13.0816 11.8822 12.7951 11.274 12.4912 10.6744C9.3472 11.6872 5.568 12.1032 0.8704 12.2104H0.0048L0.0032 12.212Z"
+                                    fill="#113263" />
+                                <path
+                                    d="M4.57617 21.9288C6.69026 23.5982 9.30643 24.5043 12.0002 24.5C13.429 24.5 14.8002 24.2504 16.069 23.7928V22.6408C15.6786 19.5448 14.9922 16.7048 13.9602 13.9944C13.6882 14.0616 13.4178 14.1384 13.1506 14.2232C10.2354 15.1592 7.51057 17.268 5.01457 21.052L4.57777 21.9288H4.57617ZM17.669 23.0792C19.2156 22.2493 20.5617 21.0907 21.6127 19.6848C22.6636 18.2789 23.3939 16.6599 23.7522 14.9416L22.8482 14.5336C20.2466 13.7688 17.8226 13.4552 15.5634 13.7096C16.5842 16.4616 17.2706 19.3512 17.6626 22.4904C17.6674 22.5224 17.669 22.5544 17.669 22.5896V23.0792ZM23.9746 13.2872C24.1858 10.1443 23.1479 7.04507 21.0866 4.66321L20.6114 5.18961C18.7394 7.46641 16.6018 9.04561 14.0034 10.1208C14.3426 10.7992 14.6594 11.4824 14.9522 12.1752C17.6274 11.7912 20.4402 12.1528 23.3538 13.0152C23.3893 13.0256 23.424 13.0384 23.4578 13.0536L23.9746 13.2872ZM19.9618 3.52081C17.7686 1.57083 14.9348 0.495637 12.0002 0.500013C10.5954 0.500013 9.24817 0.740013 7.99537 1.18481L8.36017 1.62961C10.3122 3.98641 11.9314 6.31601 13.253 8.69841C15.7218 7.70161 17.6786 6.24401 19.3874 4.15921C19.3951 4.14942 19.4031 4.13982 19.4114 4.13041L19.9618 3.52241V3.52081Z"
+                                    fill="#113263" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1055_424">
+                                    <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </div>
+
+                    Muhammad Arief Nugraha
+                </a>
+
+                <a href="https://behance.net/arief_nugraha"
+                    class="d-flex align-items-center col-gap-16 mt-16 text-blue-primary" target="_blank">
+                    <div class="d-flex align-items-center">
+                        <svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.99107 15.6965C9.99107 16.7304 9.24107 17.0572 8.31964 17.0572H5.90357V14.2233H8.36786C9.36429 14.2286 9.99107 14.6411 9.99107 15.6965ZM9.57857 11.2876C9.57857 10.3394 8.84464 10.1144 8.03036 10.1144H5.90893V12.5144H8.19643C9.00536 12.5144 9.57857 12.1608 9.57857 11.2876ZM16.6661 12.5304C15.6857 12.5304 15.0321 13.1411 14.9679 14.1215H18.3C18.2089 13.1304 17.6946 12.5304 16.6661 12.5304ZM24 4.28578V23.1429C24 24.5626 22.8482 25.7144 21.4286 25.7144H2.57143C1.15179 25.7144 0 24.5626 0 23.1429V4.28578C0 2.86614 1.15179 1.71436 2.57143 1.71436H21.4286C22.8482 1.71436 24 2.86614 24 4.28578ZM14.5554 9.91078H18.7232V8.89828H14.5554V9.91078ZM12.2518 15.8197C12.2518 14.5286 11.6411 13.4144 10.3768 13.0554C11.2982 12.6161 11.7804 12.1072 11.7804 11.0733C11.7804 9.02686 10.2536 8.52864 8.49107 8.52864H3.64286V18.8144H8.63036C10.5 18.8036 12.2518 17.909 12.2518 15.8197ZM20.3571 15.0269C20.3571 12.8251 19.0661 10.9876 16.7357 10.9876C14.4643 10.9876 12.9268 12.6911 12.9268 14.9304C12.9268 17.2501 14.3893 18.8411 16.7357 18.8411C18.5143 18.8411 19.6661 18.0429 20.2232 16.334H18.4179C18.2196 16.9715 17.4214 17.3036 16.8 17.3036C15.6 17.3036 14.9732 16.6019 14.9732 15.4126H20.3411C20.3464 15.2894 20.3571 15.1554 20.3571 15.0269Z"
+                                fill="#113263" />
+                        </svg>
+
+
+                    </div>
+
+                    Muhammad Arief Nugraha
+                </a>
+
+                <a href="https://www.instagram.com/dvkentury"
+                    class="d-flex align-items-center col-gap-16 mt-16 text-blue-primary" target="_blank">
+                    <div class="d-flex align-items-center">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 12.5C15 13.0933 14.8241 13.6734 14.4944 14.1667C14.1648 14.6601 13.6962 15.0446 13.148 15.2716C12.5999 15.4987 11.9967 15.5581 11.4147 15.4424C10.8328 15.3266 10.2982 15.0409 9.87868 14.6213C9.45912 14.2018 9.1734 13.6672 9.05764 13.0853C8.94189 12.5033 9.0013 11.9001 9.22836 11.3519C9.45542 10.8038 9.83994 10.3352 10.3333 10.0056C10.8266 9.67595 11.4067 9.5 12 9.5C12.7949 9.50247 13.5565 9.81934 14.1186 10.3814C14.6807 10.9435 14.9975 11.7051 15 12.5V12.5ZM21.375 8.375V16.625C21.375 18.0174 20.8219 19.3527 19.8373 20.3373C18.8527 21.3219 17.5174 21.875 16.125 21.875H7.875C6.48261 21.875 5.14726 21.3219 4.16269 20.3373C3.17812 19.3527 2.625 18.0174 2.625 16.625V8.375C2.625 6.98261 3.17812 5.64726 4.16269 4.66269C5.14726 3.67812 6.48261 3.125 7.875 3.125H16.125C17.5174 3.125 18.8527 3.67812 19.8373 4.66269C20.8219 5.64726 21.375 6.98261 21.375 8.375V8.375ZM16.5 12.5C16.5 11.61 16.2361 10.74 15.7416 9.99993C15.2471 9.25991 14.5443 8.68314 13.7221 8.34254C12.8998 8.00195 11.995 7.91283 11.1221 8.08647C10.2492 8.2601 9.44736 8.68868 8.81802 9.31802C8.18868 9.94736 7.7601 10.7492 7.58647 11.6221C7.41283 12.495 7.50195 13.3998 7.84254 14.2221C8.18314 15.0443 8.75991 15.7471 9.49993 16.2416C10.24 16.7361 11.11 17 12 17C13.1935 17 14.3381 16.5259 15.182 15.682C16.0259 14.8381 16.5 13.6935 16.5 12.5ZM18 7.625C18 7.4025 17.934 7.18499 17.8104 6.99998C17.6868 6.81498 17.5111 6.67078 17.3055 6.58564C17.1 6.50049 16.8738 6.47821 16.6555 6.52162C16.4373 6.56502 16.2368 6.67217 16.0795 6.8295C15.9222 6.98684 15.815 7.18729 15.7716 7.40552C15.7282 7.62375 15.7505 7.84995 15.8356 8.05552C15.9208 8.26109 16.065 8.43679 16.25 8.5604C16.435 8.68402 16.6525 8.75 16.875 8.75C17.1734 8.75 17.4595 8.63147 17.6705 8.4205C17.8815 8.20952 18 7.92337 18 7.625Z"
+                                fill="#113263" />
+                        </svg>
+
+
+                    </div>
+
+                    dvkentury
+                </a>
+
+                <a href="assets/Resume - Muhammad Arief Nugraha.pdf"
+                    class="d-flex align-items-center col-gap-16 mt-20 text-blue-primary">
+                    <div class="d-flex align-items-center">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21 15.9287V19.9287C21 20.4591 20.7893 20.9679 20.4142 21.3429C20.0391 21.718 19.5304 21.9287 19 21.9287H5C4.46957 21.9287 3.96086 21.718 3.58579 21.3429C3.21071 20.9679 3 20.4591 3 19.9287V15.9287M7 10.9287L12 15.9287M12 15.9287L17 10.9287M12 15.9287V3.92871"
+                                stroke="#113263" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+
+                    Download Resume
+                </a>
+            </div>
         </div>
     </section>
     <!-- END WELCOME -->
