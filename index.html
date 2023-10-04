@@ -164,7 +164,8 @@
             border: dotted 2px #113263;
         }
         
-        #project .list .item {
+        #project .list .item,
+        #process .list .item {
             width: calc(25% - 15px);
         }
 
@@ -189,6 +190,27 @@
             height: auto;
             border-radius: 8px;
             object-fit: cover;
+        }
+
+        #process .list .item {
+            padding: 20px;
+            border-radius: 8px;
+            background: #CFD6E0;
+            border: solid 2px #B0BBCB;
+        }
+
+        #process .list .item .title span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #113263;
+            color: #fff;
+            flex-shrink: 0;
+            font-size: 20px;
+            font-weight: 700;
         }
 
     </style>
@@ -499,6 +521,50 @@
         </div>
     </section>
     <!-- END PROJECTS -->
+
+    <!-- START PROCESS-->
+    <section id="process" class="mt-40 px-80">
+        <h2 class="fs-60 fw-semibold text-clash-display">The Process</h2>
+
+        <div class="list d-flex flex-wrap col-gap-20 row-gap-16 mt-20">
+            <div class="item">
+                <div class="title d-flex col-gap-16 align-items-center  ">
+                    <span>01</span>
+                    <h3 class="fs-24">Understanding The Brief</h3>
+                </div>
+
+                <p class="mt-16">Learn and read carefully about the brief so so I understand your problems and needs</p>
+            </div>
+
+            <div class="item">
+                <div class="title d-flex col-gap-16 align-items-center  ">
+                    <span>02</span>
+                    <h3 class="fs-24">Research and Gather Insights</h3>
+                </div>
+
+                <p class="mt-16">Research to gain insight about user need, business need, and competitor so we can make better product</p>
+            </div>
+
+            <div class="item">
+                <div class="title d-flex col-gap-16 align-items-center  ">
+                    <span>03</span>
+                    <h3 class="fs-24">Gather The Solutions</h3>
+                </div>
+
+                <p class="mt-16">Gather the solutions for the main problems and then choose one solution that fit for the problem</p>
+            </div>
+
+            <div class="item">
+                <div class="title d-flex col-gap-16 align-items-center  ">
+                    <span>01</span>
+                    <h3 class="fs-24">Design & Prototyping</h3>
+                </div>
+
+                <p class="mt-16">From wireframe to high fidelity design and make prototype for the design</p>
+            </div>
+        </div>
+    </section>
+    <!-- END PROCESS-->
 
     <!-- START CONNECT -->
     <!-- <section id="connect" class="connect">
