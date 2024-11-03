@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav .menu {
+    @apply transition-all bottom-[-200px];
+}
+nav .menu.show {
+    @apply transition-all bottom-[43px];
+}
+
+.case-study {
+    @apply border border-dashed border-primary-main px-4 py-1 text-primary-main font-bold rounded-full text-xs;
+}
+
+.mywork {
+    background: url('../assets/img/mywork.webp') no-repeat;
+    height: 560px;
+    background-attachment: fixed;
+}
