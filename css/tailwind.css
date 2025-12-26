@@ -1,20 +1,27 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
+@theme {
+  --color-*: initial;
+  --color-primary-surface: #cfd6e0;
+  --color-primary-border: #b0bbcb;
+  --color-primary-main: #113263;
+  --color-primary-hover: #0b2142;
+  --color-black: #121212;
+  --color-white: #fff;
+  --color-gray: #818181;
+  --color-border-gray: #ececec;
+
+  --font-*: initial;
+  --font-sans: Satoshi, sans-serif;
+  --font-clash-display: Clash Display, sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+}
 nav .menu {
     @apply transition-all bottom-[-200px];
 }
 nav .menu.show {
     @apply transition-all bottom-[43px];
-}
-
-.case-study {
-    @apply border border-dashed border-primary-main px-4 py-1 text-primary-main font-bold rounded-full text-xs;
-}
-
-.mywork {
-    background: url('../assets/img/mywork.webp') no-repeat;
-    height: 560px;
-    background-attachment: fixed;
 }
